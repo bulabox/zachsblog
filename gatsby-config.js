@@ -30,6 +30,19 @@ module.exports = {
                 
             }
         },
+        //Google Analytics with updated UA Tracking ID
+        module.exports = {
+            plugins: [
+                {
+                    resolve: `gatsby-plugin-google-analytics`,
+                    options: {
+                        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+                        trackingId: "UA-160885119-1",
+                    },
+                },
+            ],
+        },
+        //End Google Analytics 2020 @ BerlingBlog.com
         {
             resolve: `@stackbit/gatsby-plugin-menus`,
             options: {
