@@ -1,15 +1,12 @@
+
 import React from "react"
 import PropTypes from "prop-types"
 
-export default class HTML extends React.Component {
-    render() {
-        const ads = process.env.NODE_ENV === 'production' &&
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" /> ;
+export default function HTML(props) {
         return (
             <html {...props.htmlAttributes}>
             <head>
-                {ads && ads}
-                {props.headComponents}<title/>
+                {props.headComponents}
             </head>
             <body {...props.bodyAttributes}>
             {props.preBodyComponents}
@@ -19,14 +16,13 @@ export default class HTML extends React.Component {
             <div
                 key={`body`}
                 id="___gatsby"
-                dangerouslySetInnerHTML={{__html: props.body}}
+                dangerouslySetInnerHTML={{ __html: props.body }}
             />
             {props.postBodyComponents}
             </body>
             </html>
         )
     }
-}
 
     HTML.propTypes = {
         htmlAttributes: PropTypes.object,
@@ -35,4 +31,5 @@ export default class HTML extends React.Component {
         preBodyComponents: PropTypes.array,
         body: PropTypes.string,
         postBodyComponents: PropTypes.array,
-    };
+    }
+}
