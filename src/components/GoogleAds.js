@@ -9,7 +9,7 @@ class GoogleAds extends Component {
         return (
                 <ins className='adsbygoogle'                    
                 style={{ display: 'block' }}                    
-                data-ad-client= 'add-your-client-id'                    
+                data-ad-client= 'ca-pub-4257311131649668'                    
                 data-ad-slot={this.props.slot}                    
                 data-ad-format= 'auto'                    
                 data-full-width-responsive="true"                
