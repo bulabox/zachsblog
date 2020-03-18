@@ -17,7 +17,7 @@ export default class SubscribeForm extends React.Component {
               </div>
               <input type="hidden" name="form-name" value="subscribeForm" />
               <button className="button" type="submit">Subscribe</button>  
-              <AdSense.Google client='ca-pub-4257311131649668' slot='7806394673'style={{ display: 'block' }}layout='in-article' format='fluid'
+              <AdSense.Google client='ca-pub-4257311131649668' slot='7806394673'style={{ display: 'block' }}layout='in-article' format='fluid'/>
             </form> 
         );                   
     }
