@@ -21,7 +21,7 @@ export default class SubscribeForm extends React.Component {
             //Adsense
             <div>
             <AdSense.Google
-              client='ca-pub-7292810486004926'
+              client='ca-pub-4257311131649668'
               slot='7806394673'
               style={{ display: 'block' }}
               layout='in-article'
