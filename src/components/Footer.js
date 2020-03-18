@@ -21,15 +21,6 @@ export default class Footer extends React.Component {
                   {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social') && 
                     <Social {...this.props} />
                   }
-                     <script>{
-                              <AdSense.Google
-                              client='ca-pub-4257311131649668'
-                              slot='7806394673'
-                              style={{ display: 'block', color: 'blue'}}
-                              layout='in-article'
-                              format='fluid'
-                            />}
-                    </script>    
                 </div>
               </div>
             </footer>
