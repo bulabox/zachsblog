@@ -1,4 +1,5 @@
 import React from 'react';
+import AdSense from 'react-adsense';
 import _ from 'lodash';
 
 import {htmlToReact, Link} from '../utils';
@@ -20,6 +21,13 @@ export default class Footer extends React.Component {
                   {_.get(this.props, 'pageContext.site.siteMetadata.footer.has_social') && 
                     <Social {...this.props} />
                   }
+                      <AdSense.Google
+                      client='ca-pub-4257311131649668'
+                      
+                      style={{ display: 'block', color: 'blue'}}
+                      layout='in-article'
+                      format='fluid'
+                    />
                 </div>
               </div>
             </footer>
