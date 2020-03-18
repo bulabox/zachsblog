@@ -19,6 +19,7 @@ export default class SubscribeForm extends React.Component {
               <button className="button" type="submit">Subscribe</button>
             </form>
             //Adsense
+            <div>
             <AdSense.Google
               client='ca-pub-7292810486004926'
               slot='7806394673'
@@ -26,6 +27,7 @@ export default class SubscribeForm extends React.Component {
               layout='in-article'
               format='fluid'
             />
+            </div>
             //adsense End
         );
     }
