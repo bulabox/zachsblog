@@ -18,6 +18,16 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+    /*
+    
+    Below is Google Adsense
+    
+    */
+                    <script>
+                        {`<div async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></div>`}
+                    </script>
+    //End Of Adsense
+    
       </body>
     </html>
   )
