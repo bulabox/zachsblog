@@ -1,4 +1,5 @@
 import React from 'react';
+import AdSense from 'react-adsense';
 
 export default class SubscribeForm extends React.Component {
     render() {
@@ -17,6 +18,15 @@ export default class SubscribeForm extends React.Component {
               <input type="hidden" name="form-name" value="subscribeForm" />
               <button className="button" type="submit">Subscribe</button>
             </form>
+            //Adsense
+            <AdSense.Google
+              client='ca-pub-7292810486004926'
+              slot='7806394673'
+              style={{ display: 'block' }}
+              layout='in-article'
+              format='fluid'
+            />
+            //adsense End
         );
     }
 }
