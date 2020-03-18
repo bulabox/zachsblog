@@ -1,5 +1,4 @@
 import React from 'react';
-import AdSense from 'react-adsense';
 import _ from 'lodash';
 
 import {htmlToReact, Link} from '../utils';
@@ -10,17 +9,7 @@ export default class Footer extends React.Component {
         return (
             <footer id="colophon" className="site-footer">
               <div className="inner">
-            //Adsense Below
-                <div> 
-                            <AdSense.Google
-                                  client='ca-pub-4257311131649668'
-                                  slot='7806394673'
-                                  style={{ display: 'block', color: 'blue'}}
-                                  layout='in-article'
-                                  format='fluid'
-                            />  
-                </div>
-            //Adsense End
+            
                 <div className="site-footer-inside">
                   <p className="site-info">
                     {htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content'))}
