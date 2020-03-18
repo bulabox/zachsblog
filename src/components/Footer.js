@@ -24,6 +24,7 @@ export default class Footer extends React.Component {
                      <script>{
                               <AdSense.Google
                               client='ca-pub-4257311131649668'
+                              slot='7806394673'
                               style={{ display: 'block', color: 'blue'}}
                               layout='in-article'
                               format='fluid'
