@@ -35,7 +35,7 @@ module.exports = {
                     resolve: `gatsby-plugin-google-analytics`,
                     options: {
                         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-                        trackingId: "UA-160885119-1",
+                        trackingId: "UA-100788857-4",
                     },
                 },
         //End Google Analytics 2020 @ BerlingBlog.com
